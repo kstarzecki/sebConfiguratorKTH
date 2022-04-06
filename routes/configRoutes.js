@@ -17,11 +17,11 @@ router.post('/',function (req, res) {
     var courseID = req.query.courseID
     }
   var config = generateSEBConfig(courseID)
-  var filename = `SebClientSettings-${courseID}.seb`
+  var filename = `SebClientSettings-${courseID}`
   const writeOptions = { compact: false, ignoreComment: false, spaces: 2, fullTagEmptyElement: true }
   const file = convert.js2xml(config, writeOptions)
 
-  res.set({'Content-Disposition': 'attachment; filename='+filename,'Content-type': 'text/xml'});
+  res.set({'Content-Disposition': 'attachment; filename='+filename,'Content-type': 'text/seb'});
   res.send(file);
   
 });
