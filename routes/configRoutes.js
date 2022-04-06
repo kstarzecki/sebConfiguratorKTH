@@ -16,7 +16,7 @@ router.post('/',function (req, res) {
     } else {
     var courseID = req.query.courseID
     }
-  var patt = /\d*$/
+  var patt = /^[0-9]*$/
   if(patt.test(courseID)){
     var config = generateSEBConfig(courseID)
     var filename = `SebClientSettings-${courseID}.seb`
