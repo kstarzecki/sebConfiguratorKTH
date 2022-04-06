@@ -1,5 +1,5 @@
 {
-  "name": "SEB Config Generator",
+  "name": "seb-configurator-kth",
   "version": "1.0.0",
   "description": "SEB Config Generator - KTH",
   "main": "app.js",
