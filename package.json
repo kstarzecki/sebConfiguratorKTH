@@ -17,5 +17,8 @@
     "fs": "^0.0.1-security",
     "method-override": "^3.0.0",
     "xml-js": "^1.6.11"
+  },
+  "engines": {
+    "node": ">=17.0.0"
   }
 }
