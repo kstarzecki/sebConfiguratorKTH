@@ -10,14 +10,14 @@ router.get('/', function(req, res){
 });
 
 router.post('/',function (req, res) {
-  console.info(`Generating SEB Config for CourseID: ${req.body.courseID}.`);
-  if(Object.keys(req.query).length === 0){
+  if (Object.keys(req.query).length === 0) {
     var courseID = req.sanitize(req.body.courseID);
-    } else {
+  } else {
     var courseID = req.query.courseID
-    }
+  }
   var patt = /^[0-9]*$/
-  if(patt.test(courseID)){
+  if (patt.test(courseID)) {
+    console.info(`Generating SEB Config for CourseID: ${courseID}.`);
     var config = generateSEBConfig(courseID)
     var filename = `SebClientSettings-${courseID}.seb`
     const writeOptions = { compact: false, ignoreComment: false, spaces: 2, fullTagEmptyElement: true }
