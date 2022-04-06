@@ -17,7 +17,7 @@ router.post('/',function (req, res) {
     var courseID = req.query.courseID
     }
   var config = generateSEBConfig(courseID)
-  var filename = `SebClientSettings-${courseID}`
+  var filename = `SebClientSettings-${courseID}.seb`
   const writeOptions = { compact: false, ignoreComment: false, spaces: 2, fullTagEmptyElement: true }
   const file = convert.js2xml(config, writeOptions)
 
