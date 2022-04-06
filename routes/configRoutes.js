@@ -16,14 +16,18 @@ router.post('/',function (req, res) {
     } else {
     var courseID = req.query.courseID
     }
-  var config = generateSEBConfig(courseID)
-  var filename = `SebClientSettings-${courseID}.seb`
-  const writeOptions = { compact: false, ignoreComment: false, spaces: 2, fullTagEmptyElement: true }
-  const file = convert.js2xml(config, writeOptions)
+  var patt = /[0-9]$/
+  if(patt.test(courseID)){
+    var config = generateSEBConfig(courseID)
+    var filename = `SebClientSettings-${courseID}.seb`
+    const writeOptions = { compact: false, ignoreComment: false, spaces: 2, fullTagEmptyElement: true }
+    const file = convert.js2xml(config, writeOptions)
 
-  res.set({'Content-Disposition': 'attachment; filename='+filename,'Content-type': 'text/seb'});
-  res.send(file);
-  
+    res.set({'Content-Disposition': 'attachment; filename='+filename,'Content-type': 'text/seb'});
+    res.send(file);
+  } else {
+    res.status(400).send('Bad Request')
+  } 
 });
 
 function generateSEBConfig (courseID) {
