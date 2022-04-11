@@ -14,6 +14,8 @@ router.post('/',function (req, res) {
     var courseID = req.sanitize(req.body.courseID);
   } else {
     var courseID = req.query.courseID
+    // .split(",")
+    // console.log('arr'+Array.isArray(courseID))
   }
   var patt = /^[0-9]*$/
   if (patt.test(courseID)) {
