@@ -191,7 +191,7 @@
     <key>useTemporaryDownUploadDirectory</key>
     <false />
     <key>examKeySalt</key>
-    <data>EMjOtagbgp9aFufZ0auWNu1dksZb/lzOZIql+c3b6ts=</data>
+    <data>W4SxWqf8KIn3A31LWb6T/F/6LTIXe+pyIWQ8k98eRto=</data>
     <key>examSessionClearCookiesOnEnd</key>
     <true />
     <key>examSessionClearCookiesOnStart</key>
@@ -1302,7 +1302,7 @@
     <key>sebServiceIgnore</key>
     <false />
     <key>allowVirtualMachine</key>
-    <true />
+    <false />
     <key>allowScreenSharing</key>
     <true />
     <key>enablePrivateClipboard</key>
@@ -1342,7 +1342,7 @@
     <key>allowDisplayMirroring</key>
     <false />
     <key>allowedDisplaysMaxNumber</key>
-    <integer>1</integer>
+    <integer>2</integer>
     <key>allowedDisplayBuiltin</key>
     <true />
     <key>allowedDisplayBuiltinEnforce</key>
