@@ -191,7 +191,7 @@
     <key>useTemporaryDownUploadDirectory</key>
     <false />
     <key>examKeySalt</key>
-    <data>W4SxWqf8KIn3A31LWb6T/F/6LTIXe+pyIWQ8k98eRto=</data>
+    <data>18VucB6JJKmH42aSHQ7Sunj0Q1aquH73HcurgwlS6Ss=</data>
     <key>examSessionClearCookiesOnEnd</key>
     <true />
     <key>examSessionClearCookiesOnStart</key>
@@ -234,6 +234,50 @@
     <array></array>
     <key>prohibitedProcesses</key>
     <array>
+      <dict>
+        <key>active</key>
+        <true />
+        <key>currentUser</key>
+        <true />
+        <key>strongKill</key>
+        <false />
+        <key>os</key>
+        <integer>1</integer>
+        <key>executable</key>
+        <string>CiscoWebExStart.exe</string>
+        <key>originalName</key>
+        <string>CiscoWebExStart.exe</string>
+        <key>description</key>
+        <string />
+        <key>identifier</key>
+        <string />
+        <key>windowHandlingProcess</key>
+        <string />
+        <key>user</key>
+        <string />
+      </dict>
+      <dict>
+        <key>active</key>
+        <true />
+        <key>currentUser</key>
+        <true />
+        <key>strongKill</key>
+        <false />
+        <key>os</key>
+        <integer>1</integer>
+        <key>executable</key>
+        <string>CiscoCollabHost.exe</string>
+        <key>originalName</key>
+        <string>CiscoCollabHost.exe</string>
+        <key>description</key>
+        <string />
+        <key>identifier</key>
+        <string />
+        <key>windowHandlingProcess</key>
+        <string />
+        <key>user</key>
+        <string />
+      </dict>
       <dict>
         <key>active</key>
         <true />
@@ -1127,7 +1171,7 @@
         <key>regex</key>
         <true />
         <key>expression</key>
-        <string>([\w\d]+\.)?canvas\.kth\.se\/login(\/.*)?$</string>
+        <string>([\w\d]+\.)?canvas\.kth\.se\/login(.*?)$</string>
         <key>action</key>
         <integer>1</integer>
       </dict>
@@ -1147,7 +1191,7 @@
         <key>regex</key>
         <true />
         <key>expression</key>
-        <string>([\w\d]+\.)?login\.sys\.kth\.se(\/.*)?$</string>
+        <string>([\w\d]+\.)?login\.sys\.kth\.se(.*?)$</string>
         <key>action</key>
         <integer>1</integer>
       </dict>
@@ -1157,7 +1201,7 @@
         <key>regex</key>
         <true />
         <key>expression</key>
-        <string>([\w\d]+\.)?login\.ug\.kth\.se(\/.*)?$</string>
+        <string>([\w\d]+\.)?login\.ug\.kth\.se(.*?)$</string>
         <key>action</key>
         <integer>1</integer>
       </dict>
@@ -1167,7 +1211,7 @@
         <key>regex</key>
         <true />
         <key>expression</key>
-        <string>([\w\d]+\.)?saml-5\.sys\.kth\.se(\/.*)?$</string>
+        <string>([\w\d]+\.)?saml-5\.sys\.kth\.se(.*?)$</string>
         <key>action</key>
         <integer>1</integer>
       </dict>
@@ -1177,7 +1221,7 @@
         <key>regex</key>
         <true />
         <key>expression</key>
-        <string>([\w\d]+\.)?saml-5\.ug\.kth\.se(\/.*)?$</string>
+        <string>([\w\d]+\.)?saml-5\.ug\.kth\.se(.*?)$</string>
         <key>action</key>
         <integer>1</integer>
       </dict>
@@ -1197,7 +1241,7 @@
         <key>regex</key>
         <true />
         <key>expression</key>
-        <string>([\w\d]+\.)?canvas\.kth\.se\/courses(\/[0-9]+)\/files\/([a-zA-Z0-9_.-]+)\?module_item_id=([0-9]+)$</string>
+        <string>([\w\d]+\.)?canvas\.kth\.se\/logout(.*?)$</string>
         <key>action</key>
         <integer>1</integer>
       </dict>
@@ -1209,7 +1253,7 @@
     <key>blacklistURLFilter</key>
     <string />
     <key>whitelistURLFilter</key>
-    <string>([\w\d]+\.)?canvas\.kth\.se(\/)?$;([\w\d]+\.)?canvas\.kth\.se\/courses(\/[0-9]+)?$;([\w\d]+\.)?canvas\.kth\.se\/courses(\/[0-9]+)\/assignments(\/.*)?$;([\w\d]+\.)?canvas\.kth\.se\/courses(\/[0-9]+)\/external_tools\/retrieve\?display=full_width&amp;url=https%3A%2F%2Fkth.quiz-lti-dub-prod.instructure.com(.*)?$;([\w\d]+\.)?canvas\.kth\.se\/courses(\/[0-9]+)\/modules(\/.*)?$;([\w\d]+\.)?canvas\.kth\.se\/courses(\/[0-9]+)\/modules/items/([0-9]+)?$;([\w\d]+\.)?canvas\.kth\.se\/courses(\/[0-9]+)\/modules\#module_([0-9]+)$;([\w\d]+\.)?canvas\.kth\.se\/courses(\/[0-9]+)\/pages\/([a-zA-Z0-9_.-]+)\?module_item_id=([0-9]+)$;([\w\d]+\.)?canvas\.kth\.se\/courses(\/[0-9]+)\/quizzes(\/.*)?$;([\w\d]+\.)?canvas\.kth\.se\/courses(\/[0-9]+)\/student_view(\/.*)?$;([\w\d]+\.)?canvas\.kth\.se\/courses(\/[0-9]+)\/test_student(\/.*)?$;([\w\d]+\.)?canvas\.kth\.se\/login(\/.*)?$;([\w\d]+\.)?kth\.mobius\.cloud(\/.*)?$;([\w\d]+\.)?login\.sys\.kth\.se(\/.*)?$;([\w\d]+\.)?login\.ug\.kth\.se(\/.*)?$;([\w\d]+\.)?saml-5\.sys\.kth\.se(\/.*)?$;([\w\d]+\.)?saml-5\.ug\.kth\.se(\/.*)?$;([\w\d]+\.)?sso\.canvaslms\.com\/delegated_auth_pass_through\?target=(.*)$;([\w\d]+\.)?canvas\.kth\.se\/courses(\/[0-9]+)\/files\/([a-zA-Z0-9_.-]+)\?module_item_id=([0-9]+)$</string>
+    <string>([\w\d]+\.)?canvas\.kth\.se(\/)?$;([\w\d]+\.)?canvas\.kth\.se\/courses(\/[0-9]+)?$;([\w\d]+\.)?canvas\.kth\.se\/courses(\/[0-9]+)\/assignments(\/.*)?$;([\w\d]+\.)?canvas\.kth\.se\/courses(\/[0-9]+)\/external_tools\/retrieve\?display=full_width&amp;url=https%3A%2F%2Fkth.quiz-lti-dub-prod.instructure.com(.*)?$;([\w\d]+\.)?canvas\.kth\.se\/courses(\/[0-9]+)\/modules(\/.*)?$;([\w\d]+\.)?canvas\.kth\.se\/courses(\/[0-9]+)\/modules/items/([0-9]+)?$;([\w\d]+\.)?canvas\.kth\.se\/courses(\/[0-9]+)\/modules\#module_([0-9]+)$;([\w\d]+\.)?canvas\.kth\.se\/courses(\/[0-9]+)\/pages\/([a-zA-Z0-9_.-]+)\?module_item_id=([0-9]+)$;([\w\d]+\.)?canvas\.kth\.se\/courses(\/[0-9]+)\/quizzes(\/.*)?$;([\w\d]+\.)?canvas\.kth\.se\/courses(\/[0-9]+)\/student_view(\/.*)?$;([\w\d]+\.)?canvas\.kth\.se\/courses(\/[0-9]+)\/test_student(\/.*)?$;([\w\d]+\.)?canvas\.kth\.se\/login(.*?)$;([\w\d]+\.)?kth\.mobius\.cloud(\/.*)?$;([\w\d]+\.)?login\.sys\.kth\.se(.*?)$;([\w\d]+\.)?login\.ug\.kth\.se(.*?)$;([\w\d]+\.)?saml-5\.sys\.kth\.se(.*?)$;([\w\d]+\.)?saml-5\.ug\.kth\.se(.*?)$;([\w\d]+\.)?sso\.canvaslms\.com\/delegated_auth_pass_through\?target=(.*)$;([\w\d]+\.)?canvas\.kth\.se\/logout(.*?)$</string>
     <key>urlFilterTrustedContent</key>
     <true />
     <key>urlFilterRegex</key>
@@ -1362,9 +1406,9 @@
     <key>insideSebEnableStartTaskManager</key>
     <false />
     <key>insideSebEnableLogOff</key>
-    <true />
-    <key>insideSebEnableShutDown</key>
     <false />
+    <key>insideSebEnableShutDown</key>
+    <true />
     <key>insideSebEnableEaseOfAccess</key>
     <false />
     <key>insideSebEnableVmWareClientShade</key>
@@ -1417,5 +1461,7 @@
     <true />
     <key>enableF12</key>
     <true />
+    <key>enableMiddleMouse</key>
+    <false />
   </dict>
 </plist>
